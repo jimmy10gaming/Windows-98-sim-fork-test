@@ -277,7 +277,6 @@ var resolve_address = async function (address) {
 		if (!address.match(/^https?:\/\/web.archive.org\//) && !address.startsWith(window.location.origin)) {
 			// special exemption: show archive but later version
 			if (address.match(/^https?:\/\/(www\.)?(windows93.net)/)) {
-				address = "https://google.com/search?igu=1" + address;
 			// complete exemptions:
 			} else if (
 				!address.match(/^https?:\/\/(www\.)?(copy.sh|topotech.github.io\/interdimensionalcable|isaiahodhner.io|brie.fi\/ng)/) &&
